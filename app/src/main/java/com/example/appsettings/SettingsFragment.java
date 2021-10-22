@@ -26,7 +26,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                Toast.makeText(getActivity(),"Đã nhấn vào "+pref.getTitle() , Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),getString(R.string.str_press)+pref.getTitle() , Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
